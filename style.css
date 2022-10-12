@@ -1,0 +1,107 @@
+@charset "UTF-8"; /* UTF-8編碼，使中文不會產生亂碼*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css); /* google雲端字體 思源黑體*/
+/* CSS Document */
+/* body */
+body{
+	font-family:"Noto Sans TC", sans-serif;  /* google雲端字體 思源黑體*/
+	background: #fff;   /* 背景色*/
+	margin: 0;          /* 外部距離設為0*/
+	text-align: center; /*文字居中對齊*/
+	-webkit-text-size-adjust: 100%;         /*文字大小會達到易讀的大小，但是不會修改佈局*/
+}
+/* 區塊設定 */
+header{
+	background:#1a5768;  /* 背景色*/
+	padding-top: 10px;   /* 內距-上方，上方內部距離為10px*/
+}
+main{
+	background:-webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#a97aa9), to(#7ae4c2)); /* 背景色*/
+	padding: 30px;      /* 內距，內部距離設為30px*/
+	font-size: 16px;    /* 內文的字體大小設為16px*/
+	line-height: 2em;   /* 行間設為2個字高*/
+	color:#db3982;      /* 文字顏色設定*/
+    text-shadow: 1px 1px 1px #a97aa9;
+}
+footer{
+	background:#1a5768; /* 背景色*/
+	padding: 10px;      /* 內距，內部距離設為10px*/
+	font-size: 14px;    /* 內文的字體大小設為14px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+}
+
+footer p {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: twinkle;
+}
+
+@keyframes twinkle{
+    0% {color: transparent;}
+    50% {color: #E4EEF7;}
+    100% {color: transparent;}
+}
+
+/* 網站標題 */
+h1 {
+	font-size: 28px;    /* 內文的字體大小設為28px*/
+	color: rgba(255, 255, 255, 0.865);     /* 文字顏色設定*/
+	font-weight:700;    /* 文字粗細設定，100,300,400,500,700,700*/	
+    text-shadow: 5px 5px 5px #a0a0a0;
+}
+/* 標題 */
+h2 {
+	font-size: 16px;    /* 內文的字體大小設為16px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+	font-weight: 300;   /* 文字粗細設定*/
+    text-shadow: 5px 5px 5px #176290;
+}
+h3{
+	font-size: 14px;    /* 內文的字體大小設為14px*/
+	color: #E4EEF7;     /* 文字顏色設定*/
+	font-weight: 100;   /* 文字粗細設定*/
+    text-shadow: 5px 5px 5px #176290;
+}
+/* 超連結 */
+a{
+	color: #EF5095;        /* 超連結屬性的文字顏色設定*/
+}
+a:hover{
+	color: #048FC1;        /* 超連結『滑鼠滑過』文字顏色設定*/
+	text-decoration: none; /* 超連結『滑鼠滑過』文字無底線裝飾效果*/
+}
+/* 導覽列 */
+.navigation ul {
+    background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#214b58), to(#db3982));; /* 導覽列背景色*/
+    margin: 0;          /* 外部距離設為0*/
+    padding: 10px;      /* 內距，內部距離設為10px*/
+    text-align: center; /* 文字居中對齊*/
+}
+.navigation ul li {
+    list-style-type: none;  /* 取消項目清單符號*/
+    display: inline;        /* 使元素於同一行呈現（文字或圖片不換行）*/
+    margin: 0 8px;          /* 外部距離設定，上下0px,左右8px*/
+}
+.navigation ul li a {
+    color: #ffffff;         /* 導覽列超連結文字顏色設定*/
+    text-decoration: none;  /* 導覽列超連結文字無底線裝飾效果*/
+}
+.navigation ul li a:hover {
+    color: #ad2dc7;             /* 導覽列超連結『滑鼠滑過』文字顏色設定*/
+    text-decoration: underline; /* 導覽列超連結『滑鼠滑過』文字有底線裝飾效果*/
+}
+
+.lyrics {
+    background-color: aliceblue;
+    border-radius: 5%;
+    box-shadow:10px 10px 10px #115f83;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    opacity: 0.8;
+}
+
+.lyrics:hover {
+    opacity: 1;
+}
